@@ -1,0 +1,173 @@
+@import url('./style.css');
+
+.main {
+   padding: 230px 0 148px;
+   overflow: hidden;
+}
+
+.main__img {
+   position: absolute;
+   top: -460px;
+   right: -336px;
+   z-index: -1;
+}
+
+.main__inner {
+   position: relative;
+}
+
+.main__content {}
+
+.main__title {
+   margin-bottom: 55px;
+   max-width: 900px;
+}
+
+.main__cards {
+   display: flex;
+   background: #EAEAFA;
+   border-radius: 32px;
+}
+
+.main__card {
+   padding: 48px;
+}
+
+.main-card__icon {
+   margin-bottom: 48px;
+}
+
+.main-card__title {
+   margin-bottom: 20px;
+}
+
+.main-card__desc {}
+
+.whatWeDo {
+   background: none;
+}
+
+/* ----------------------------------------- */
+
+.ourMission {
+   padding: 40px 0;
+}
+
+.container {}
+
+.ourMission__inner {
+   display: flex;
+   justify-content: space-between;
+}
+
+.ourMission__card {
+   padding: 52px 24px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   width: 678px;
+   border-radius: 48px;
+   color: #FFFFFF;
+}
+
+.ourMission__card:first-child {
+   margin-right: 16px;
+}
+
+.ourArrproach {
+   background: url('../images/ourMission-card-bg-img-1.png');
+   background-position: 50% 50%;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.ourMission-card__icon {
+   margin-bottom: 52px;
+}
+
+.ourMission-card__title {
+   margin-bottom: 24px;
+}
+
+.ourMission-card__desc {
+   max-width: 435px;
+   margin: 0 auto;
+}
+
+.ourTeam {
+   background: url('../images/ourMission-card-bg-img-2.png');
+   background-position: 50% 50%;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+@media (max-width: 1024px) {
+   .main__cards {
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .main__card {
+      align-items: center;
+      text-align: center;
+      padding: 28px 24px;
+   }
+
+   .main-card__desc {
+      max-width: 520px;
+   }
+
+   .main-card__icon {
+      margin-bottom: 24px;
+   }
+
+   .main-card__title {
+      margin-bottom: 20px;
+   }
+}
+
+@media (max-width: 768px) {
+   .main {
+      padding: 414px 0 28px;
+   }
+
+   .main__img {
+      position: absolute;
+      width: 628px;
+      top: -620px;
+      right: -176px;
+      z-index: -1;
+      transform: rotate(30deg);
+   }
+
+   .ourMission__inner {
+      flex-direction: column;
+   }
+
+   .ourMission__card:first-child {
+      margin: 0 0 8px 0;
+   }
+
+   .ourMission__card {
+      padding: 24px;
+      width: 100%;
+      border-radius: 16px;
+   }
+
+   .ourMission-card__icon {
+      margin-bottom: 40px;
+   }
+
+   .ourMission-card__title {
+      margin-bottom: 16px;
+   }
+}
+
+@media (max-width: 425px) {
+   .main__card {
+      align-items: start;
+      text-align: start;
+   }
+}

@@ -5,8 +5,9 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <title>Azeia</title>
    <link rel="stylesheet" href="./styles/index.css">
+   <script src="./js/whatWeDo.js" defer></script>
 </head>
 
 <body>
@@ -27,8 +28,37 @@
                   <li class="nav__list">
                      <a class="nav__list-link" href="./pages/whoWeAre.html">Who We Are</a>
                   </li>
-                  <li class="nav__list">
+                  <li class="nav__list dropdown">
                      <a class="nav__list-link" href="./pages/whatWeDo.html">What we do</a>
+                     <button class="dropbtn"><svg width="7" height="5" viewBox="0 0 7 5" fill="none"
+                           xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M3.93301 4.75C3.74056 5.08333 3.25944 5.08333 3.06699 4.75L0.901924 1C0.709474 0.666666 0.950037 0.25 1.33494 0.25L5.66506 0.25C6.04996 0.25 6.29053 0.666667 6.09808 1L3.93301 4.75Z"
+                              fill="white" />
+                        </svg>
+                     </button>
+                     <div class="dropdown-content">
+                        <a class="dropdown-link" href="./pages/marketing.html">
+                           Market research
+                           <img class="dropdown-link__icon" src="./images/dropdown-link-arrow.svg" alt="icon">
+                        </a>
+                        <a class="dropdown-link" href="#">
+                           Marketing strategy
+                           <img class="dropdown-link__icon" src="./images/dropdown-link-arrow.svg" alt="icon">
+                        </a>
+                        <a class="dropdown-link" href="#">
+                           Brand development
+                           <img class="dropdown-link__icon" src="./images/dropdown-link-arrow.svg" alt="icon">
+                        </a>
+                        <a class="dropdown-link" href="#">
+                           Content marketing
+                           <img class="dropdown-link__icon" src="./images/dropdown-link-arrow.svg" alt="icon">
+                        </a>
+                        <a class="dropdown-link" href="#">
+                           SMM | SEO
+                           <img class="dropdown-link__icon" src="./images/dropdown-link-arrow.svg" alt="icon">
+                        </a>
+                     </div>
                   </li>
 
                </ul>
@@ -36,47 +66,46 @@
             <div class="header__links">
                <a href="./pages/contacts.html" class="header__modal-btn btn"><span>Contact Us</span></a>
             </div>
-         </div>
-         <!-- Hamburger icon -->
-         <input class="side-menu" type="checkbox" id="side-menu" />
-         <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
-         <!-- Menu -->
-         <div class="navbar">
-            <div class="navbar__inner">
-               <div class="container">
-                  <div class="navbar-header">
-                     <a class="header-logo-link" href="./index.html">
-                        <img class="header-logo" src="./images/Huntcore-logo.svg" alt="icon">
-                     </a>
+            <!-- Hamburger icon -->
+            <input class="side-menu" type="checkbox" id="side-menu" />
+            <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+            <!-- Menu -->
+            <div class="navbar">
+               <div class="navbar__inner">
+                  <div class="container">
+                     <div class="navbar-header">
+                        <a class="header-logo-link" href="./index.html">
+                           <img class="header-logo" src="./images/Huntcore-logo.svg" alt="icon">
+                        </a>
+                     </div>
+                     <div class="navbar-content">
+                        <div class="navbar-content-links">
+                           <a class="navbar-content-link" href="./index.html">Home</a>
+                           <a class="navbar-content-link" href="./pages/about.html">About</a>
+                           <a class="navbar-content-link" href="./pages/whatWeDo.html">What whe do</a>
+                           <a class="navbar-content-link" href="./pages/contacts.html">Contacts</a>
+                        </div>
+                     </div>
                   </div>
-                  <div class="navbar-content">
-                     <div class="navbar-content-links">
-                        <a class="navbar-content-link" href="./index.html">Home</a>
-                        <a class="navbar-content-link" href="./pages/about.html">About</a>
-                        <a class="navbar-content-link" href="./pages/whatWeDo.html">What whe do</a>
-                        <a class="navbar-content-link" href="./pages/contacts.html">Contacts</a>
+               </div>
+               <div class="navbar-footer">
+                  <div class="container">
+                     <div class="navbar-footer__inner">
+                        <h3 class="navbar-contacts__title">Our info</h3>
+                        <p class="navbar-contacts__tag">Email</p>
+                        <p class="navbar-contacts__mail navbar-contacts__info">info@huntcore.co</p>
+                        <p class="navbar-contacts__tag">Registration adress</p>
+                        <p class="navbar-contacts__address navbar-contacts__info">1501, Capital Center 151, Gloucester
+                           Rd, Wanchai
+                           Hong Kong</p>
+                        <p class="navbar-contacts__tag">Social media</p>
+                        <a class="navbar-contacts__link text-underline navbar-contacts__info"
+                           href="https://www.linkedin.com/company/huntcorelimited/" target="_blank">Linkindin</a>
                      </div>
                   </div>
                </div>
             </div>
-            <div class="navbar-footer">
-               <div class="container">
-                  <div class="navbar-footer__inner">
-                     <h3 class="navbar-contacts__title">Our info</h3>
-                     <p class="navbar-contacts__tag">Email</p>
-                     <p class="navbar-contacts__mail navbar-contacts__info">info@huntcore.co</p>
-                     <p class="navbar-contacts__tag">Registration adress</p>
-                     <p class="navbar-contacts__address navbar-contacts__info">1501, Capital Center 151, Gloucester
-                        Rd, Wanchai
-                        Hong Kong</p>
-                     <p class="navbar-contacts__tag">Social media</p>
-                     <a class="navbar-contacts__link text-underline navbar-contacts__info"
-                        href="https://www.linkedin.com/company/huntcorelimited/" target="_blank">Linkindin</a>
-                  </div>
-               </div>
-            </div>
          </div>
-      </div>
       </div>
    </header>
 
@@ -84,7 +113,19 @@
    <main class="main">
       <div class="container">
          <div class="main__inner">
-            
+            <img class="main__img" src="./images/home-main-img.png" alt="image">
+            <div class="main__content">
+               <h1 class="main__title title">
+                  We create tailored marketing solutions for businesses of all sizes and industries
+               </h1>
+               <div class="main__btns">
+                  <a class="main__btn-more first-page-btn" href=""><span>Learn more</span></a>
+                  <a class="main__btn-link second-page-btn" href="">
+                     Our Services
+                     <img class="btn-arrow" src="./images/btn-arrow.svg" alt="icon">
+                  </a>
+               </div>
+            </div>
          </div>
       </div>
    </main>
@@ -92,7 +133,54 @@
    <div class="whyChooseUs">
       <div class="container">
          <div class="whyChooseUs__inner">
-
+            <div class="whyChooseUs__content">
+               <p class="whyChooseUs__desc">Why choose us?</p>
+               <div class="whyChooseUs-content__text">
+                  <p class="whyChooseUs__title subtitle">
+                     Azeria offers tailored solutions to address business challenges, delivering quality work within
+                     deadlines
+                  </p>
+                  <a class="whyChooseUs__btn-link second-page-btn" href="">
+                     About us
+                     <img class="btn-arrow" src="./images/btn-arrow.svg" alt="icon">
+                  </a>
+               </div>
+            </div>
+            <div class="whyChooseUs__cards">
+               <div class="whyChooseUs__card whyChooseUs-card-1">
+                  <div class="whyChooseUs-card__icon-wrap">
+                     <img class="whyChooseUs-card__icon" src="./images/whyChooseUs-card-icon-1.svg" alt="icon">
+                  </div>
+                  <p class="whyChooseUs-card__desc desc">
+                     Customized solutions tailored
+                     to your business challenges
+                  </p>
+               </div>
+               <div class="whyChooseUs__card whyChooseUs-card-2">
+                  <div class="whyChooseUs-card__icon-wrap">
+                     <img class="whyChooseUs-card__icon" src="./images/whyChooseUs-card-icon-2.svg" alt="icon">
+                  </div>
+                  <p class="whyChooseUs-card__desc desc">
+                     Collaborative approach ensuring client satisfaction
+                  </p>
+               </div>
+               <div class="whyChooseUs__card whyChooseUs-card-3">
+                  <div class="whyChooseUs-card__icon-wrap">
+                     <img class="whyChooseUs-card__icon" src="./images/whyChooseUs-card-icon-3.svg" alt="icon">
+                  </div>
+                  <p class="whyChooseUs-card__desc desc">
+                     Experienced professionals delivering consistent results
+                  </p>
+               </div>
+               <div class="whyChooseUs__card whyChooseUs-card-4">
+                  <div class="whyChooseUs-card__icon-wrap">
+                     <img class="whyChooseUs-card__icon" src="./images/whyChooseUs-card-icon-4.svg" alt="icon">
+                  </div>
+                  <p class="whyChooseUs-card__desc desc">
+                     High-quality work within set deadlines
+                  </p>
+               </div>
+            </div>
          </div>
       </div>
    </div>
@@ -100,15 +188,63 @@
    <div class="whatWeDo">
       <div class="container">
          <div class="whatWeDo__inner">
+            <p class="block-option">What we do</p>
+            <div class="whatWeDo-list__wrapper">
+               <ul class="whatWeDo__list" id="myList">
+                  <li class="whatWeDo-list__point subtitle" data-firstImage="image1-1" data-secondImage="image2-1">
+                     Market research</li>
+                  <li class="whatWeDo-list__point subtitle" data-firstImage="image1-2" data-secondImage="image2-2">
+                     Marketing strategy</li>
+                  <li class="whatWeDo-list__point subtitle" data-firstImage="image1-3" data-secondImage="image2-3">Brand
+                     development</li>
+                  <li class="whatWeDo-list__point subtitle" data-firstImage="image1-4" data-secondImage="image2-4">
+                     Content marketing</li>
+                  <li class="whatWeDo-list__point subtitle" data-firstImage="image1-5" data-secondImage="image2-5">SMM |
+                     SEO</li>
+               </ul>
+            </div>
+            <img class="whatWeDo-list__img list-img-1 img-1-1" id="image1-1" src="./images/marketing-img-1.png"
+               alt="image">
+            <img class="whatWeDo-list__img list-img-1 img-1-2" id="image1-2" src="./images/strategic-img-1.png"
+               alt="image">
+            <img class="whatWeDo-list__img list-img-1 img-1-3" id="image1-3" src="./images/empower-img-1.png"
+               alt="image">
+            <img class="whatWeDo-list__img list-img-1 img-1-4" id="image1-4" src="./images/amplife-img-1.png"
+               alt="image">
+            <img class="whatWeDo-list__img list-img-1 img-1-5" id="image1-5" src="./images/boost-img-1.png" alt="image">
 
+            <img class="whatWeDo-list__img list-img-2 img-2-1" id="image2-1" src="./images/marketing-img-2.png"
+               alt="image">
+            <img class="whatWeDo-list__img list-img-2 img-2-2" id="image2-2" src="./images/strategic-img-2.png"
+               alt="image">
+            <img class="whatWeDo-list__img list-img-2 img-2-3" id="image2-3" src="./images/empower-img-2.png"
+               alt="image">
+            <img class="whatWeDo-list__img list-img-2 img-2-4" id="image2-4" src="./images/amplife-img-2.png"
+               alt="image">
+            <img class="whatWeDo-list__img list-img-2 img-2-5" id="image2-5" src="./images/boost-img-2.png" alt="image">
          </div>
       </div>
+   </div>
    </div>
 
    <div class="getStarted">
       <div class="container">
          <div class="getStarted__inner">
-
+            <p class="getStarted__title subtitle">Our expert team will create tailored solutions to help your business
+               thrive</p>
+            <div class="getStarted__link">
+               <p class="getStarted__desc desc">Don't miss out on this opportunity
+                  to boost your brand and expand your market reach. Get in touch today!</p>
+               <a href="./pages/contacts.html" class="getStarted__btn btn">
+                  <span>Let’s get started </span>
+                  <div class="getStarted-btn__icon">
+                     <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M0 4.28571V5.71429H9V7.14286H10.5V5.71429H12V4.28571H10.5V2.85714H9V4.28571H0ZM7.5 1.42857H9V2.85714H7.5V1.42857ZM7.5 1.42857H6V0H7.5V1.42857ZM7.5 8.57143H9V7.14286H7.5V8.57143ZM7.5 8.57143H6V10H7.5V8.57143Z" />
+                     </svg>
+                  </div>
+               </a>
+            </div>
          </div>
       </div>
    </div>
@@ -119,6 +255,7 @@
          <div class="footer__inner">
             <div class="footer__left">
                <img class="footer__logo" src="./images/footer-logo.svg" alt="logo">
+               <img class="footer-mobile__logo header__logo" src="./images/header-logo.svg" alt="logo">
                <div class="footer-left__content">
                   <p class="footer__copyright">©2023 Azeria Limited</p>
                   <a class="footer__pp-link inderline" href="./pages/PP.html">Privacy Policy</a>
@@ -137,6 +274,16 @@
                </div>
                <div class="footer__address">
                   <p class="footer-address__text">128 City Road, <br> London, EC1V 2NX, <br> England</p>
+               </div>
+            </div>
+            <div class="footer-mobile__bottom">
+               <div class="footer-mobile__info">
+                  <a class="footer-info__link underline" href="">LinkedIn</a>
+                  <a class="footer-info__link underline" href="">info@azeria.org</a>
+               </div>
+               <div class="footer-mobile__content">
+                  <p class="footer__copyright">©2023 Azeria Limited</p>
+                  <a class="footer__pp-link inderline" href="./pages/PP.html">Privacy Policy</a>
                </div>
             </div>
          </div>

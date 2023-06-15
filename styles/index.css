@@ -1,8 +1,170 @@
 @import url('./style.css');
 
 .main {
+   padding: 230px 0 148px;
 }
-.container {
-}
+
 .main__inner {
+   display: flex;
 }
+
+.main__img {
+   margin: 0 112px 0 -222px;
+}
+
+.main__content {}
+
+.main__title {
+   margin-bottom: 55px;
+}
+
+.main__btns {
+   display: flex;
+}
+
+.main__btn-more {
+   margin-right: 16px;
+}
+
+.main__btn-link {}
+
+/* ----------------------------------------------------------- */
+.whyChooseUs {
+   padding: 80px 0;
+}
+
+.whyChooseUs__inner {}
+
+.whyChooseUs__content {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 56px;
+}
+
+.whyChooseUs__desc {
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 24px;
+   text-transform: uppercase;
+   margin-right: 32px;
+   min-width: fit-content;
+}
+
+.whyChooseUs-content__text {
+   max-width: 802px;
+}
+
+.whyChooseUs__title {
+   margin-bottom: 40px;
+}
+
+.whyChooseUs__btn-link {}
+
+.whyChooseUs__cards {
+   display: flex;
+}
+
+.whyChooseUs__card {
+   margin-right: 16px;
+   padding: 16px 26px;
+   border-radius: 20px;
+   max-width: 331px;
+}
+
+.whyChooseUs__card:last-child {
+   margin-right: 0;
+}
+
+.whyChooseUs-card__icon-wrap {
+   margin-bottom: 92px;
+}
+
+.whyChooseUs-card__icon {}
+
+.whyChooseUs-card__desc {}
+
+.whyChooseUs-card-1 {
+   background: radial-gradient(113.19% 113.19% at 50% 50%, rgba(62, 196, 130, 0) 0%, rgba(62, 196, 130, 0.67) 100%), #FFFFFF;
+}
+
+.whyChooseUs-card-2 {
+   background: radial-gradient(113.19% 113.19% at 50% 50%, rgba(234, 152, 79, 0) 0%, rgba(234, 152, 79, 0.67) 100%), #FFFFFF;
+}
+
+.whyChooseUs-card-3 {
+   background: radial-gradient(113.19% 113.19% at 50% 50%, rgba(210, 78, 213, 0) 0%, rgba(210, 78, 213, 0.67) 100%), #FFFFFF;
+}
+
+.whyChooseUs-card-4 {
+   background: radial-gradient(113.19% 113.19% at 50% 50%, rgba(78, 186, 224, 0) 0%, rgba(78, 186, 224, 0.67) 100%), #FFFFFF;
+}
+
+@media (max-width: 1024px) {
+   .main {
+      padding: 150px 0 0;
+      overflow: hidden;
+   }
+
+   .main__inner {
+      flex-direction: column-reverse;
+   }
+
+   .main__img {
+      margin: 0 -180px -130px auto;
+      transform: scale(-1, 1);
+      width: 540px;
+   }
+
+   .main__content {
+      margin-bottom: 67px;
+   }
+
+   .whyChooseUs__content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+   }
+
+   .whyChooseUs__desc {
+      margin-bottom: 10px;
+      color: rgba(18, 17, 76, 0.4);
+   }
+
+   .whyChooseUs__btn-link {
+      margin: 0 auto;
+   }
+
+   .whyChooseUs__cards {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+   }
+
+   .whyChooseUs__card {
+      margin: 0 0 8px 0;
+   }
+   
+   .whyChooseUs__card:last-child {
+      margin: 0;
+   }
+}
+
+@media (max-width: 768px) {
+   .whyChooseUs {
+      padding: 40px;
+   }
+   .whyChooseUs-card__icon-wrap {
+      margin-bottom: 36px;
+   }
+}
+
+@media (max-width: 550px) {
+   .whyChooseUs__card {
+      margin: 0 0 8px 0;
+      padding: 16px;
+      border-radius: 8px;
+      max-width: 100% !important;
+   }
+
+}
+
+@media (max-width: 425px) {}
