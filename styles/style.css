@@ -654,10 +654,11 @@ body {
    .getStarted__title {
       margin-bottom: 36px;
    }
+
    .getStarted__desc {
       margin-bottom: 16px;
    }
-   
+
 }
 
 @media (max-width: 864px) {}
@@ -667,12 +668,21 @@ body {
       padding: 0 40px;
    }
 
-   .btn {
-      height: 38px;
-      font-size: 12px;
-      line-height: 18px;
-      gap: 8px;
+   .first-page-btn {
+      padding: 8px 14px;
       border-radius: 6px;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 16px;
+      align-items: center;
+   }
+
+   .second-page-btn {
+      border-radius: 6px;
+      padding: 6px 14px;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 16px;
    }
 
    .title {
@@ -706,9 +716,14 @@ body {
    }
 
    .btn {
-      height: 32px;
-      border-radius: 12px;
-      padding: 8px 16px;
+      height: 40px;
+      border-radius: 6px;
+      padding: 6px 14px;
+      align-items: center;
+   }
+
+   .getStarted-btn__icon {
+      padding: 2px 4px;
    }
 
    .input__wrap {
@@ -787,4 +802,3 @@ body {
 
 
 }
-
