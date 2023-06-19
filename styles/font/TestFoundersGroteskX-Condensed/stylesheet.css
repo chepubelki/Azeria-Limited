@@ -1,0 +1,7 @@
+@font-face {
+   font-family: 'Test Founders Grotesk X-Condensed';
+   src: local('Test Founders Grotesk X-Condensed'), local('Test Founders Grotesk X-Condensed'),
+      url('TestFoundersGroteskX-Condensed-Semibold.otf');
+   font-weight: 600;
+   font-style: normal;
+}

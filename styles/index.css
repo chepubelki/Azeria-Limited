@@ -16,6 +16,7 @@
 
 .main__title {
    margin-bottom: 55px;
+   max-width: 600px;
 }
 
 .main__btns {
@@ -144,13 +145,13 @@
    }
    
    .whyChooseUs__card:last-child {
-      margin: 0;
+      margin-bottom: 0;
    }
 }
 
 @media (max-width: 768px) {
    .whyChooseUs {
-      padding: 40px;
+      padding: 40px 0;
    }
    .whyChooseUs-card__icon-wrap {
       margin-bottom: 36px;
@@ -162,7 +163,8 @@
       margin: 0 0 8px 0;
       padding: 16px;
       border-radius: 8px;
-      max-width: 100% !important;
+      max-width: 100%;
+      width: 100%;
    }
 
 }

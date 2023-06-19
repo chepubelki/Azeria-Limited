@@ -2,6 +2,7 @@
 @import url('./header.css');
 @import url('./footer.css');
 @import url('./font/stylesheet.css');
+@import url('./font/TestFoundersGroteskX-Condensed/stylesheet.css');
 
 html {
    scroll-behavior: smooth;
@@ -89,6 +90,7 @@ body {
    padding: 12px 24px;
    position: relative;
    transition: 0.3s all;
+   border: none;
 }
 
 .first-page-btn span {
@@ -181,12 +183,13 @@ body {
    color: #FFF;
    font-weight: 500;
    font-size: 16px;
-   line-height: 24px;
+   line-height: 26px;
    outline: none;
    border: none;
-   height: 48px;
-   background: rgba(255, 255, 255, 0.1);
-   border-radius: 12px;
+   height: 50px;
+   background: rgba(255, 255, 255, 0.15);
+   border: 1px solid rgba(255, 255, 255, 0.15);
+   border-radius: 6px;
    padding: 12px 24px;
    position: relative;
    width: 100%;
@@ -224,6 +227,7 @@ body {
 .block-heading__number {}
 
 .title {
+   font-family: 'Test Founders Grotesk X-Condensed';
    font-weight: 600;
    font-size: 70px;
    line-height: 66px;
@@ -231,13 +235,15 @@ body {
 }
 
 .subtitle {
+   font-family: 'Test Founders Grotesk X-Condensed';
    font-weight: 600;
-   font-size: 60px;
-   line-height: 56px;
+   font-size: 86px;
+   line-height: 76px;
    text-transform: uppercase;
 }
 
 .heading {
+   font-family: 'Test Founders Grotesk X-Condensed';
    font-weight: 600;
    font-size: 36px;
    line-height: 34px;
@@ -391,17 +397,103 @@ body {
 
 /* ---------------------------------------------------------- */
 
+/* свойства модального окна по умолчанию */
+.modal {
+   position: fixed;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   background: #5A59D9;
+   color: #FFFFFF !important;
+   z-index: 1050;
+   opacity: 0;
+   pointer-events: none;
+}
+
+.modal .nav__menu {
+   color: #FFFFFF !important;
+   left: calc(50% - 350px/2 - 60px);
+   top: calc(50% - 44px/2);
+   border: 1px solid rgba(255, 255, 255, 0.16);
+   border-radius: 97px;
+}
+
+/* при отображении модального окно */
+.modal:target {
+   opacity: 1;
+   pointer-events: auto;
+   overflow-y: auto;
+}
+
+.modal-header__links {
+   width: 32px;
+   height: 32px;
+   background: #EAEAFB;
+   border-radius: 800px;
+   padding: 5px 9px;
+}
+
+.modal__close-btn {}
+
+.modal__content {
+   padding: 144px 0 0;
+}
+
+.modal-content__inner {
+   display: flex;
+   justify-content: space-between;
+}
+
+.modal__info {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.modal-info__desc {
+   max-width: 139px;
+   opacity: 0.4;
+}
+
+.modal-info__text {}
+
+.modal-info__address {
+   margin-bottom: 20px;
+}
+
+.modal-info__links {}
+
+.modal-info__linkedin {
+   margin-right: 20px;
+}
+
+.underline {}
+
+.modal-info__email {}
+
+.modal__form-wrapper {
+   max-width: 780px;
+}
+
+.modal-form__title {
+   margin-bottom: 48px;
+}
+
 /* FORM START */
 
 
 .form__wrap {
    max-width: fit-content;
    height: fit-content;
-   display: flex;
    flex-wrap: wrap;
-   gap: 16px;
-   max-width: 580px;
    color: #FFFFFF;
+}
+
+.form__wrap .input {
+   margin-bottom: 12px;
 }
 
 .form__error-message {
@@ -427,11 +519,15 @@ body {
 
 .input__wrap {
    display: flex;
-   gap: 20px;
 }
 
 .input__inner {
-   width: 280px;
+   width: 392px;
+   margin-right: 12px;
+}
+
+.input__inner:last-child {
+   margin-right: 0;
 }
 
 .input-withMessage {
@@ -457,7 +553,7 @@ body {
 .modal__message {}
 
 .input__message {
-   height: 48px;
+   height: 154px;
    resize: none;
 }
 
