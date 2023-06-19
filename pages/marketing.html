@@ -6,6 +6,8 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Marketing strategy</title>
    <link rel="stylesheet" href="../styles/sections.css">
+   <script src="../js/modal.js" defer></script>
+   <script src="../js/header.js" defer></script>
 </head>
 
 <body>
@@ -20,86 +22,219 @@
             <nav class="nav">
                <ul class="nav__menu">
                   <li class="nav__list">
-                     <a class="nav__list-link" href="../pages/about.html">About</a>
+                     <a class="nav__list-link" href="../index.html">Home</a>
                   </li>
-
                   <li class="nav__list">
-                     <a class="nav__list-link" href="../pages/whoWeAre.html">Who We Are</a>
+                     <a class="nav__list-link" href="../pages/about.html">Who We Are</a>
                   </li>
                   <li class="nav__list dropdown">
-                     <a class="nav__list-link" href="../pages/whatWeDo.html">What we do</a>
-                     <button class="dropbtn"><svg width="7" height="5" viewBox="0 0 7 5" fill="none"
-                           xmlns="http://www.w3.org/2000/svg">
-                           <path
-                              d="M3.93301 4.75C3.74056 5.08333 3.25944 5.08333 3.06699 4.75L0.901924 1C0.709474 0.666666 0.950037 0.25 1.33494 0.25L5.66506 0.25C6.04996 0.25 6.29053 0.666667 6.09808 1L3.93301 4.75Z"
-                              fill="white" />
-                        </svg>
+                     <a class="nav__list-link" href="../index.html#whatWeDo">What we do</a>
+                     <button class="dropbtn">
+                        <svg width="9" height="6" viewBox="0 0 9 6" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                           d="M0.184112 0.768044C0.298718 0.657779 0.452414 0.597527 0.611423 0.600527C0.770432 0.603527 0.921746 0.669535 1.03211 0.784044L4.00011 3.93444L6.96811 0.784044C7.02206 0.724568 7.0874 0.676526 7.16026 0.642765C7.23311 0.609005 7.31201 0.590212 7.39226 0.5875C7.47251 0.584789 7.55249 0.598214 7.62746 0.626979C7.70243 0.655745 7.77086 0.699267 7.8287 0.754966C7.88655 0.810665 7.93262 0.877407 7.96419 0.951238C7.99577 1.02507 8.0122 1.10449 8.01252 1.18478C8.01283 1.26508 7.99703 1.34463 7.96604 1.41871C7.93505 1.49278 7.88951 1.55989 7.83211 1.61604L4.43211 5.21604C4.37614 5.27411 4.30904 5.3203 4.23481 5.35185C4.16059 5.3834 4.08076 5.39966 4.00011 5.39966C3.91946 5.39966 3.83964 5.3834 3.76541 5.35185C3.69118 5.3203 3.62408 5.27411 3.56811 5.21604L0.168112 1.61604C0.0578474 1.50144 -0.00240499 1.34774 0.000595186 1.18873C0.00359536 1.02972 0.0696026 0.87841 0.184112 0.768044Z"
+                           fill="white" />
+                     </svg>
                      </button>
                      <div class="dropdown-content">
-                        <a class="dropdown-link" href="#legal">
+                        <a class="dropdown-link" href="../pages/marketing.html">
                            Market research
                            <img class="dropdown-link__icon" src="../images/dropdown-link-arrow.svg" alt="icon">
                         </a>
-                        <a class="dropdown-link" href="#business">
+                        <a class="dropdown-link" href="../pages/strategic.html">
                            Marketing strategy
                            <img class="dropdown-link__icon" src="../images/dropdown-link-arrow.svg" alt="icon">
                         </a>
-                        <a class="dropdown-link" href="#banks">
+                        <a class="dropdown-link" href="../pages/empower.html">
                            Brand development
                            <img class="dropdown-link__icon" src="../images/dropdown-link-arrow.svg" alt="icon">
                         </a>
-                        <a class="dropdown-link" href="#aml">
+                        <a class="dropdown-link" href="../pages/emplify.html">
                            Content marketing
                            <img class="dropdown-link__icon" src="../images/dropdown-link-arrow.svg" alt="icon">
                         </a>
-                        <a class="dropdown-link" href="#hr">
-                           SMM | SEO
-                           <img class="dropdown-link__icon" src="../images/dropdown-link-arrow.svg" alt="icon">
-                        </a>
+                        <div class="dropdown__bottom">
+                           <a class="dropdown-link" href="../pages/boost.html">
+                              SMM
+                           </a>
+                           <a class="dropdown-link" href="../pages/attract.html">
+                              SEO
+                           </a>
+                        </div>
                      </div>
                   </li>
 
                </ul>
             </nav>
             <div class="header__links">
-               <a href="../pages/contacts.html" class="header__modal-btn btn"><span>Contact Us</span></a>
+               <a href="#openModal" class="header__modal-btn btn"><span>Contact Us</span></a>
             </div>
-         </div>
-         <!-- Hamburger icon -->
-         <input class="side-menu" type="checkbox" id="side-menu" />
-         <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
-         <!-- Menu -->
-         <div class="navbar">
-            <div class="navbar__inner">
-               <div class="container">
-                  <div class="navbar-header">
-                     <a class="header-logo-link" href="../index.html">
-                        <img class="header-logo" src="../images/Huntcore-logo.svg" alt="icon">
-                     </a>
-                  </div>
-                  <div class="navbar-content">
-                     <div class="navbar-content-links">
-                        <a class="navbar-content-link" href="../index.html">Home</a>
-                        <a class="navbar-content-link" href="../pages/about.html">About</a>
-                        <a class="navbar-content-link" href="../pages/whatWeDo.html">What whe do</a>
-                        <a class="navbar-content-link" href="../pages/contacts.html">Contacts</a>
+            <!-- Hamburger icon -->
+            <input class="side-menu" type="checkbox" id="side-menu" />
+            <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+            <!-- Menu -->
+            <div class="navbar">
+               <img class="navbar__bg-img" src="../images/menu-bg-img.png" alt="image">
+               <div class="navbar__inner">
+                  <div class="container">
+                     <div class="navbar-header">
+                        <a class="header-logo-link" href="../index.html">
+                           <img class="header-logo" src="../images/navbar-header-logo.svg" alt="icon">
+                        </a>
+                        <a href="#openModal" class="header__modal-btn btn"><span>Contact Us</span></a>
+                     </div>
+                     <div class="navbar-content">
+                        <div class="navbar-content-links">
+                           <a class="navbar-content-link" href="../index.html">Home</a>
+                           <a class="navbar-content-link" href="../pages/about.html">About</a>
+                           <a class="navbar-content-link" href="../pages/whatWeDo.html">What whe do</a>
+                           <a class="navbar-content-link" href="../pages/contacts.html">Contacts</a>
+                        </div>
+                        <div class="navbar__info">
+                           <p class="navbar-info__address">128 City Road, London,<br> EC1V 2NX, England</p>
+                           <div class="navbar-info__links">
+                              <a href="https://www.linkedin.com/company/azeria-limited/about/" target="_blank"
+                                 class="navbar-info__linkedin underline">LinkedIn</a>
+                              <a href="mailto:info@azeria.org" class="navbar-info__email underline">info@azeria.org</a>
+                           </div>
+                        </div>
                      </div>
                   </div>
                </div>
             </div>
-            <div class="navbar-footer">
-               <div class="container">
-                  <div class="navbar-footer__inner">
-                     <h3 class="navbar-contacts__title">Our info</h3>
-                     <p class="navbar-contacts__tag">Email</p>
-                     <p class="navbar-contacts__mail navbar-contacts__info">info@huntcore.co</p>
-                     <p class="navbar-contacts__tag">Registration adress</p>
-                     <p class="navbar-contacts__address navbar-contacts__info">1501, Capital Center 151, Gloucester
-                        Rd, Wanchai
-                        Hong Kong</p>
-                     <p class="navbar-contacts__tag">Social media</p>
-                     <a class="navbar-contacts__link text-underline navbar-contacts__info"
-                        href="https://www.linkedin.com/company/huntcorelimited/" target="_blank">Linkindin</a>
+            <!-- -------------------------MODAL START----------------------- -->
+            <div id="openModal" class="modal">
+               <div class="modal__header header">
+                  <div class="container">
+                     <div class="header__inner">
+                        <div class="logo__wrap">
+                           <a href="../index.html">
+                              <img class="header__logo" src="../images/navbar-header-logo.svg" alt="logo">
+                           </a>
+                        </div>
+                        <nav class="nav">
+                           <ul class="nav__menu">
+                              <li class="nav__list">
+                                 <a class="nav__list-link" href="../pages/about.html">About</a>
+                              </li>
+
+                              <li class="nav__list">
+                                 <a class="nav__list-link" href="../pages/whoWeAre.html">Who We Are</a>
+                              </li>
+                              <li class="nav__list dropdown">
+                                 <a class="nav__list-link" href="../pages/whatWeDo.html">What we do</a>
+                                 <button class="dropbtn">
+                                    <svg width="9" height="6" viewBox="0 0 9 6" fill="none"
+                                       xmlns="http://www.w3.org/2000/svg">
+                                       <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M0.184112 0.768044C0.298718 0.657779 0.452414 0.597527 0.611423 0.600527C0.770432 0.603527 0.921746 0.669535 1.03211 0.784044L4.00011 3.93444L6.96811 0.784044C7.02206 0.724568 7.0874 0.676526 7.16026 0.642765C7.23311 0.609005 7.31201 0.590212 7.39226 0.5875C7.47251 0.584789 7.55249 0.598214 7.62746 0.626979C7.70243 0.655745 7.77086 0.699267 7.8287 0.754966C7.88655 0.810665 7.93262 0.877407 7.96419 0.951238C7.99577 1.02507 8.0122 1.10449 8.01252 1.18478C8.01283 1.26508 7.99703 1.34463 7.96604 1.41871C7.93505 1.49278 7.88951 1.55989 7.83211 1.61604L4.43211 5.21604C4.37614 5.27411 4.30904 5.3203 4.23481 5.35185C4.16059 5.3834 4.08076 5.39966 4.00011 5.39966C3.91946 5.39966 3.83964 5.3834 3.76541 5.35185C3.69118 5.3203 3.62408 5.27411 3.56811 5.21604L0.168112 1.61604C0.0578474 1.50144 -0.00240499 1.34774 0.000595186 1.18873C0.00359536 1.02972 0.0696026 0.87841 0.184112 0.768044Z"
+                                          fill="white" />
+                                    </svg>
+                                 </button>
+                                 <div class="dropdown-content">
+                                    <a class="dropdown-link" href="../pages/marketing.html">
+                                       Market research
+                                       <img class="dropdown-link__icon" src="../images/dropdown-link-arrow.svg" alt="icon">
+                                    </a>
+                                    <a class="dropdown-link" href="../pages/strategic.html">
+                                       Marketing strategy
+                                       <img class="dropdown-link__icon" src="../images/dropdown-link-arrow.svg" alt="icon">
+                                    </a>
+                                    <a class="dropdown-link" href="../pages/empower.html">
+                                       Brand development
+                                       <img class="dropdown-link__icon" src="../images/dropdown-link-arrow.svg" alt="icon">
+                                    </a>
+                                    <a class="dropdown-link" href="../pages/emplify.html">
+                                       Content marketing
+                                       <img class="dropdown-link__icon" src="../images/dropdown-link-arrow.svg" alt="icon">
+                                    </a>
+                                    <div class="dropdown__bottom">
+                                       <a class="dropdown-link" href="../pages/boost.html">
+                                          SMM
+                                       </a>
+                                       <a class="dropdown-link" href="../pages/attract.html">
+                                          SEO
+                                       </a>
+                                    </div>
+                                 </div>
+                              </li>
+
+                           </ul>
+                        </nav>
+                        <div class="modal-header__links">
+                           <a class="modal__close-btn" href="#close"><img src="../images/modal-close-btn.svg"
+                                 alt="icon"></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal__content">
+                  <div class="container">
+                     <div class="modal-content__inner">
+                        <div class="modal__info">
+                           <p class="modal-info__desc">
+                              Do you have a project in mind?
+                           </p>
+                           <p class="modal__title-mobile title">Contact us and let’s work together, it’s just easy as
+                              writing an email:</p>
+                           <div class="modal-info__text">
+                              <p class="modal-info__address">
+                                 128 City Road, London,<br> EC1V 2NX, England
+                              </p>
+                              <div class="modal-info__links">
+                                 <a href="https://www.linkedin.com/company/azeria-limited/about/" class="modal-info__linkedin underline" target="_blank">LinkedIn</a>
+                                 <a href="mailto:info@azeria.org" class="modal-info__email underline">info@azeria.org</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="modal__form-wrapper">
+                           <p class="modal-form__title title">Contact us and let’s work together, it’s just easy as
+                              writing an email:</p>
+                           <form class="form__wrap" novalidate>
+                              <div class="input__wrap">
+                                 <div class="input__inner">
+                                    <input class="form-modal__name input__name input" name="name" type="text"
+                                       placeholder="Full name*" required>
+                                    <div class="subdesc name-input-errorMessage">
+                                       Please provide your name.
+                                    </div>
+                                 </div>
+                                 <div class="input__inner">
+                                    <input class="form-modal__email input__email input" name="email" type="email"
+                                       placeholder="Email*" required>
+                                    <div class="subdesc email-input-errorMessage">
+                                       Please provide a valid email address.
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="input-withMessage">
+                                 <input class="form-modal__subject input__subject input" name="subject" type="text"
+                                    placeholder="Message subject" required>
+                                 <div class="subdesc subject-input-errorMessage">
+                                    Please enter your message subject.
+                                 </div>
+                              </div>
+                              <textarea class="form-modal__message input__message input" name="message" id="ilwgstrbu"
+                                 cols="30" rows="10" placeholder="Message"></textarea>
+
+                              <div class="modal__btn-wrap">
+                                 <button class="input__btn first-page-btn" type="submit"><span>Contact
+                                       us</span></button>
+                                 <div class="form__error-message main-form__title">Oops! <br> Something went wrong.
+                                 </div>
+                              </div>
+                           </form>
+                           <div class="form__success-message">
+                              <img class="succes__icon" src="../images/succes-icon.png" alt="icon">
+                              <div class="success__text">
+                                 <p class="seccess__title title">Success!</p>
+                                 <p class="success__desc">Your application has been accepted.
+                                    You will be contacted shortly for further details.</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                   </div>
                </div>
             </div>
@@ -165,7 +300,7 @@
             <div class="getStarted__link">
                <p class="getStarted__desc desc">Don't miss out on this opportunity
                   to boost your brand and expand your market reach. Get in touch today!</p>
-               <a href="../pages/contacts.html" class="getStarted__btn btn">
+               <a href="#openModal" class="getStarted__btn btn">
                   <span>Let’s get started </span>
                   <div class="getStarted-btn__icon">
                      <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -178,7 +313,7 @@
          </div>
       </div>
    </div>
-
+   
    <footer class="footer">
       <div class="container">
          <div class="footer__inner">
@@ -192,14 +327,14 @@
             </div>
             <div class="footer__right">
                <div class="footer__menu">
-                  <a class="footer-menu__link" href="">Home</a>
-                  <a class="footer-menu__link" href="">Who We Are</a>
-                  <a class="footer-menu__link" href="">What we do</a>
-                  <a class="footer-menu__link" href="">Contact</a>
+                  <a class="footer-menu__link" href="../index.html">Home</a>
+                  <a class="footer-menu__link" href="../pages/about.html">Who We Are</a>
+                  <a class="footer-menu__link" href="../index.html#whatWeDo">What we do</a>
+                  <a class="footer-menu__link" href="#openModal">Contact</a>
                </div>
                <div class="footer__info">
-                  <a class="footer-info__link underline" href="">LinkedIn</a>
-                  <a class="footer-info__link underline" href="">info@azeria.org</a>
+                  <a class="footer-info__link underline" href="https://www.linkedin.com/company/azeria-limited/about/" target="_blank">LinkedIn</a>
+                  <a class="footer-info__link underline" href="mailto:info@azeria.org">info@azeria.org</a>
                </div>
                <div class="footer__address">
                   <p class="footer-address__text">128 City Road, <br> London, EC1V 2NX, <br> England</p>
@@ -207,8 +342,8 @@
             </div>
             <div class="footer-mobile__bottom">
                <div class="footer-mobile__info">
-                  <a class="footer-info__link underline" href="">LinkedIn</a>
-                  <a class="footer-info__link underline" href="">info@azeria.org</a>
+                  <a class="footer-info__link underline" href="https://www.linkedin.com/company/azeria-limited/about/" target="_blank">LinkedIn</a>
+                  <a class="footer-info__link underline" href="mailto:info@azeria.org">info@azeria.org</a>
                </div>
                <div class="footer-mobile__content">
                   <p class="footer__copyright">©2023 Azeria Limited</p>

@@ -1,0 +1,84 @@
+@import url('./style.css');
+
+.main {
+   padding: 180px 0 64px;
+}
+
+.main__inner {
+   text-align: center;
+}
+
+.main__title {
+   margin-bottom: 64px;
+}
+
+.main__desc {
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 38px;
+   max-width: 960px;
+   margin: 0 auto;
+}
+
+/* -------------------------------------------- */
+
+.content {}
+
+.container {}
+
+.content__inner {}
+
+.main__text {
+   padding: 40px 92px 42px 64px;
+   background: #EAEAFA;
+   border-radius: 28px;
+   margin-bottom: 12px;
+}
+
+.main-text__title {
+   font-family: 'Test Founders Grotesk X-Condensed';
+   font-weight: 600;
+   font-size: 40px;
+   line-height: 40px;
+   margin-bottom: 32px;
+   margin-left: -18px;
+}
+
+.main-text__desc {
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 30px;
+}
+
+@media (max-width: 768px) {
+   .main {
+      padding: 104px 0 32px;
+   }
+   .main__desc {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+   }
+
+   .main__title {
+      margin-bottom: 24px;
+   }
+
+   .main__text {
+      padding: 20px;
+   }
+
+   .main-text__title {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 22px;
+      margin-bottom: 18px;
+      margin-left: 0;
+   }
+   
+   .main-text__desc {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+   }
+}
