@@ -422,6 +422,7 @@ body {
    z-index: 1050;
    opacity: 0;
    pointer-events: none;
+   overflow: hidden;
 }
 
 .modal .nav__menu {
