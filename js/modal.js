@@ -52,6 +52,44 @@ const validateSubject = () => {
    }
 };
 
+emailInput.addEventListener('blur', () => {
+   const emailValue = emailInput.value;
+   const errorMessage = 'Please enter a valid email address.';
+
+   if (!emailValue.includes('@')) {
+      emailInput.classList.add('invalid');
+      emailInput.setCustomValidity(errorMessage);
+      emailError.classList.add('errorMessage-visible');
+   } else {
+      emailInput.classList.remove('invalid');
+      emailInput.setCustomValidity('');
+      emailError.classList.remove('errorMessage-visible');
+   }
+});
+
+nameInput.addEventListener('blur', () => {
+   if (nameInput.value.trim() === '') {
+      nameInput.classList.add('invalid');
+      nameError.classList.add('errorMessage-visible');
+      isValid = false;
+   } else {
+      nameInput.classList.remove('invalid');
+      nameInput.setCustomValidity('');
+      nameError.classList.remove('errorMessage-visible');
+   }
+})
+subjectInput.addEventListener('blur', () => {
+   if (subjectInput.value.trim() === '') {
+      subjectInput.classList.add('invalid');
+      subjectError.classList.add('errorMessage-visible');
+      isValid = false;
+   } else {
+      subjectInput.classList.remove('invalid');
+      subjectInput.setCustomValidity('');
+      subjectError.classList.remove('errorMessage-visible');
+   }
+})
+
 const validInput = () => {
    return validateEmail() && validateName() && validateSubject();
 };

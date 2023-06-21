@@ -59,7 +59,9 @@
    margin-bottom: 40px;
 }
 
-.whyChooseUs__btn-link {}
+.whyChooseUs__btn-link {
+   padding: 0;
+}
 
 .whyChooseUs__cards {
    display: flex;
@@ -143,7 +145,7 @@
    .whyChooseUs__card {
       margin: 0 0 8px 0;
    }
-   
+
    .whyChooseUs__card:last-child {
       margin-bottom: 0;
    }
@@ -153,8 +155,23 @@
    .whyChooseUs {
       padding: 40px 0;
    }
+
    .whyChooseUs-card__icon-wrap {
       margin-bottom: 36px;
+   }
+
+   .whyChooseUs__desc {
+      font-weight: 700;
+      font-size: 9px;
+      line-height: 11px;
+      margin-right: 0;
+   }
+
+   .whyChooseUs__btn-link {
+      width: fit-content;
+   }
+   .whyChooseUs__btn-link .btn-arrow {
+      width: 20px;
    }
 }
 

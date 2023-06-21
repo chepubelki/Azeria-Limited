@@ -182,6 +182,10 @@
       margin-bottom: 32px;
    }
 
+   .servicesInfo {
+      padding: 0 0 40px;
+   }
+
 }
 
 @media (max-width: 425px) {}

@@ -29,9 +29,7 @@
    display: none;
 }
 
-.active {
-   background: linear-gradient(0deg, #D5D5F6, #D5D5F6), #312FD0;
-}
+.active {}
 
 .header__btn {
    position: relative;
@@ -45,8 +43,8 @@
    background-color: rgba(1, 2, 33, 1);
 }
 
-.logo__wrap {
-   width: 264px;
+.header__modal-btn .btn-mobile__text {
+   display: none;
 }
 
 .nav {
@@ -74,6 +72,11 @@
 
 .nav__list:hover {
    opacity: 1;
+   color: #002BD1;
+}
+
+.modal .nav__list:hover {
+   color: #FFFFFF;
 }
 
 .nav__list--active {
@@ -121,6 +124,7 @@
 .dropdown__bottom .dropdown-link:first-child {
    border-right: 1px solid #8382E2;
 }
+
 .dropdown__bottom .dropdown-link:last-child {
    border-left: 1px solid #8382E2;
 }
@@ -172,6 +176,7 @@
 
 .dropdown-link:hover {
    opacity: 1;
+
 }
 
 .dropdown-link__icon {
@@ -192,6 +197,11 @@
 }
 
 .dropdown:hover .dropbtn svg path {
+   stroke: #002BD1;
+   cursor: pointer;
+}
+
+.modal .dropdown:hover .dropbtn svg path {
    stroke: #FFFFFF;
    cursor: pointer;
 }
@@ -224,11 +234,6 @@
    bottom: 0;
    right: 0;
    z-index: -1;
-}
-
-.navbar .header__btn {
-   background: #FFFFFF;
-   color: #E9520C;
 }
 
 .navbar .container {
@@ -264,6 +269,7 @@
    display: flex;
    margin-bottom: 80px;
    flex-direction: column;
+   font-family: 'Test Founders Grotesk X-Condensed';
    font-weight: 600;
    font-size: 48px;
    line-height: 44px;
@@ -456,7 +462,9 @@
    }
 
    .header__modal-btn {
-      margin-right: 36px;
+      margin-right: 44px;
+      height: 36px;
+      padding: 10px 30px !important;
    }
 
    .hamb {
@@ -487,6 +495,14 @@
    .header__logo,
    .header-logo {
       width: 80px;
+   }
+
+   .header__modal-btn span {
+      display: none;
+   }
+
+   .header__modal-btn .btn-mobile__text {
+      display: block;
    }
 }
 

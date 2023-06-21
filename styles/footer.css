@@ -47,6 +47,9 @@
 .footer-menu__link {
    margin-bottom: 24px;
 }
+.footer-menu__link:hover {
+   opacity: 0.6;
+}
 
 .footer-menu__link:last-child {
    margin-bottom: 0;

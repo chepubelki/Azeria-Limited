@@ -353,11 +353,11 @@ body {
 }
 
 .getStarted__title {
-   max-width: 584px;
+   max-width: 800px;
 }
 
 .getStarted__link {
-   max-width: 517px;
+   max-width: 584px;
 }
 
 .getStarted__desc {
@@ -374,6 +374,10 @@ body {
    margin-left: 10px;
 }
 
+.getStarted__btn:hover .getStarted-btn__icon{
+   background: transparent;
+}
+
 .getStarted-btn__icon svg {
    fill: #FFFFFF;
 }
@@ -386,7 +390,7 @@ body {
 .subject-input-errorMessage {
    color: red;
    display: none;
-   margin-top: 4px;
+   margin-top: -8px;
 }
 
 .errorMessage-visible {
@@ -423,6 +427,7 @@ body {
    opacity: 0;
    pointer-events: none;
    overflow: hidden;
+   transition: 0.7s all;
 }
 
 .modal .nav__menu {
@@ -528,15 +533,16 @@ body {
 .succes__icon {
    margin-right: 48px;
 }
-.success__text {
-}
+
+.success__text {}
+
 .seccess__title {
    margin-bottom: 28px;
 }
-.title {
-}
-.success__desc {
-}
+
+.title {}
+
+.success__desc {}
 
 .form__success-message,
 .form__error-message {
@@ -587,6 +593,7 @@ body {
 .modal__message {}
 
 .input__message {
+   font-family: 'Helvetica Now Display';
    height: 154px;
    resize: none;
 }
@@ -834,12 +841,15 @@ body {
    }
 
    .first-page-btn {
-      padding: 8px 14px;
+      padding: 14px 14px;
       border-radius: 6px;
       font-weight: 700;
       font-size: 13px;
       line-height: 16px;
       align-items: center;
+      width: 159.5px;
+      height: 44px;
+      text-align: center;
    }
 
    .second-page-btn {
@@ -848,6 +858,8 @@ body {
       font-weight: 700;
       font-size: 13px;
       line-height: 16px;
+      width: 159.5px;
+      height: 44px;
    }
 
    .title {
@@ -887,6 +899,21 @@ body {
       align-items: center;
    }
 
+   .navbar .header__modal-btn {
+      border: 1px solid #FFFFFF;
+      background: transparent !important;
+   }
+
+   .navbar .header__modal-btn span {
+      background: linear-gradient(85.54deg, #fff -32.98%, #fff 96.38%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   }
+
+   .navbar .btn::before {
+      background: transparent !important;
+   }
+
    .getStarted-btn__icon {
       padding: 2px 4px;
    }
@@ -908,8 +935,33 @@ body {
       text-align: center;
    }
 
+   .getStarted__desc {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+   }
+
    .succes__icon {
       margin: 0 auto 24px;
+   }
+
+   .modal__title-mobile {
+      font-weight: 600 !important;
+      font-size: 38px !important;
+      line-height: 40px !important;
+   }
+
+   .input {
+      height: 44px;
+      padding: 8px;
+   }
+
+   .input__message {
+      height: 44px;
+   }
+
+   .block-option {
+      opacity: 0.4;
    }
 }
 

@@ -8,7 +8,7 @@
 .main__img {
    position: absolute;
    top: -460px;
-   right: -336px;
+   right: -366px;
    z-index: -1;
 }
 
@@ -84,6 +84,7 @@
 
 .ourMission-card__icon {
    margin-bottom: 52px;
+   font-weight: 60px;
 }
 
 .ourMission-card__title {
@@ -162,6 +163,16 @@
 
    .ourMission-card__title {
       margin-bottom: 16px;
+   }
+
+   .ourMission-card__icon {
+      width: 28px;
+   }
+
+   .ourMission-card__desc {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
    }
 }
 

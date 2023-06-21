@@ -29,7 +29,7 @@
                      <a class="nav__list-link" href="../pages/about.html">Who We Are</a>
                   </li>
                   <li class="nav__list dropdown">
-                     <a class="nav__list-link" href="../index.html#whatWeDo">What we do</a>
+                     <a class="nav__list-link" href="#whatWeDo">What we do</a>
                      <button class="dropbtn">
                         <svg width="9" height="6" viewBox="0 0 9 6" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -69,7 +69,7 @@
                </ul>
             </nav>
             <div class="header__links">
-               <a href="#openModal" class="header__modal-btn btn"><span>Contact Us</span></a>
+               <a href="#openModal" class="header__modal-btn btn"><span>Contact Us</span ><span class='btn-mobile__text'>Contact</span></a>
             </div>
             <!-- Hamburger icon -->
             <input class="side-menu" type="checkbox" id="side-menu" />
@@ -83,14 +83,14 @@
                         <a class="header-logo-link" href="../index.html">
                            <img class="header-logo" src="../images/navbar-header-logo.svg" alt="icon">
                         </a>
-                        <a href="#openModal" class="header__modal-btn btn"><span>Contact Us</span></a>
+                        <a href="#openModal" class="header__modal-btn btn"><span>Contact Us</span ><span class='btn-mobile__text'>Contact</span></a>
                      </div>
                      <div class="navbar-content">
                         <div class="navbar-content-links">
                            <a class="navbar-content-link" href="../index.html">Home</a>
                            <a class="navbar-content-link" href="../pages/about.html">About</a>
-                           <a class="navbar-content-link" href="../pages/whatWeDo.html">What whe do</a>
-                           <a class="navbar-content-link" href="../pages/contacts.html">Contacts</a>
+                           <a class="navbar-content-link" href="#whatWeDo">What whe do</a>
+                           <a class="navbar-content-link" href="#openModal">Contact</a>
                         </div>
                         <div class="navbar__info">
                            <p class="navbar-info__address">128 City Road, London,<br> EC1V 2NX, England</p>
@@ -220,8 +220,7 @@
                                  cols="30" rows="10" placeholder="Message"></textarea>
 
                               <div class="modal__btn-wrap">
-                                 <button class="input__btn first-page-btn" type="submit"><span>Contact
-                                       us</span></button>
+                                 <button class="input__btn first-page-btn" type="submit"><span>Submit</span></button>
                                  <div class="form__error-message main-form__title">Oops! <br> Something went wrong.
                                  </div>
                               </div>
@@ -280,7 +279,7 @@
       </div>
    </main>
 
-   <div class="whatWeDo">
+   <div class="whatWeDo" id="whatWeDo">
       <div class="container">
          <div class="whatWeDo__inner">
             <p class="block-option">What we do</p>
@@ -294,11 +293,14 @@
                      development</li>
                   <li class="whatWeDo-list__point subtitle" data-firstImage="image1-4" data-secondImage="image2-4">
                      Content marketing</li>
-                  <li class="whatWeDo-list__point subtitle" data-firstImage="image1-5" data-secondImage="image2-5">SMM |
-                     SEO</li>
+                  <div class="whatWeDo-list__bottom">
+                     <li class="whatWeDo-list__point subtitle" data-firstImage="image1-5" data-secondImage="image2-5">
+                        SMM</li>
+                     <li class="whatWeDo-list__point subtitle" data-firstImage="image1-6" data-secondImage="image2-6">
+                        SEO</li>
+                  </div>
                </ul>
             </div>
-
             <img class="whatWeDo-list__img list-img-1 img-1-1" id="image1-1" src="../images/marketing-img-1.png"
                alt="image">
             <img class="whatWeDo-list__img list-img-1 img-1-2" id="image1-2" src="../images/strategic-img-1.png"
@@ -307,8 +309,8 @@
                alt="image">
             <img class="whatWeDo-list__img list-img-1 img-1-4" id="image1-4" src="../images/amplife-img-1.png"
                alt="image">
-            <img class="whatWeDo-list__img list-img-1 img-1-5" id="image1-5" src="../images/boost-img-1.png"
-               alt="image">
+            <img class="whatWeDo-list__img list-img-1 img-1-5" id="image1-5" src="../images/boost-img-1.png" alt="image">
+            <img class="whatWeDo-list__img list-img-1 img-1-6" id="image1-6" src="../images/attract-img-1.png" alt="image">
 
             <img class="whatWeDo-list__img list-img-2 img-2-1" id="image2-1" src="../images/marketing-img-2.png"
                alt="image">
@@ -318,11 +320,10 @@
                alt="image">
             <img class="whatWeDo-list__img list-img-2 img-2-4" id="image2-4" src="../images/amplife-img-2.png"
                alt="image">
-            <img class="whatWeDo-list__img list-img-2 img-2-5" id="image2-5" src="../images/boost-img-2.png"
-               alt="image">
+            <img class="whatWeDo-list__img list-img-2 img-2-5" id="image2-5" src="../images/boost-img-2.png" alt="image">
+            <img class="whatWeDo-list__img list-img-2 img-2-6" id="image2-6" src="../images/attract-img-2.png" alt="image">
          </div>
       </div>
-   </div>
    </div>
 
    <div class="ourMission">
@@ -354,7 +355,7 @@
             <div class="getStarted__link">
                <p class="getStarted__desc desc">Don't miss out on this opportunity
                   to boost your brand and expand your market reach. Get in touch today!</p>
-               <a href="../pages/contacts.html" class="getStarted__btn btn">
+               <a href="../index.html#openModal" class="getStarted__btn btn">
                   <span>Let’s get started </span>
                   <div class="getStarted-btn__icon">
                      <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -387,7 +388,8 @@
                   <a class="footer-menu__link" href="#openModal">Contact</a>
                </div>
                <div class="footer__info">
-                  <a class="footer-info__link underline" href="https://www.linkedin.com/company/azeria-limited/about/" target="_blank">LinkedIn</a>
+                  <a class="footer-info__link underline" href="https://www.linkedin.com/company/azeria-limited/about/"
+                     target="_blank">LinkedIn</a>
                   <a class="footer-info__link underline" href="mailto:info@azeria.org">info@azeria.org</a>
                </div>
                <div class="footer__address">
@@ -396,7 +398,8 @@
             </div>
             <div class="footer-mobile__bottom">
                <div class="footer-mobile__info">
-                  <a class="footer-info__link underline" href="https://www.linkedin.com/company/azeria-limited/about/" target="_blank">LinkedIn</a>
+                  <a class="footer-info__link underline" href="https://www.linkedin.com/company/azeria-limited/about/"
+                     target="_blank">LinkedIn</a>
                   <a class="footer-info__link underline" href="mailto:info@azeria.org">info@azeria.org</a>
                </div>
                <div class="footer-mobile__content">
