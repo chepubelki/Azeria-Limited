@@ -293,7 +293,7 @@ body {
 .whatWeDo__list {}
 
 .whatWeDo-list__point {
-   margin-bottom: 24px;
+   padding: 12px 24px;
    cursor: pointer;
    opacity: 0.2;
 }
@@ -374,7 +374,7 @@ body {
    margin-left: 10px;
 }
 
-.getStarted__btn:hover .getStarted-btn__icon{
+.getStarted__btn:hover .getStarted-btn__icon {
    background: transparent;
 }
 
@@ -906,8 +906,8 @@ body {
 
    .navbar .header__modal-btn span {
       background: linear-gradient(85.54deg, #fff -32.98%, #fff 96.38%);
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
    }
 
    .navbar .btn::before {

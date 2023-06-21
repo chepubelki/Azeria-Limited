@@ -2,10 +2,10 @@
 const myList = document.getElementById('myList');
 const images = document.querySelectorAll('.whatWeDo-list__img');
 
-myList.addEventListener('mouseover', function(event) {
+myList.addEventListener('mousemove', function (event) {
   if (event.target.tagName.toLowerCase() === 'li') {
     hideAllImages();
-     event.target.classList.add('clicked');
+    event.target.classList.add('clicked');
 
     const firstImageId = event.target.getAttribute('data-firstImage');
     const secondImageId = event.target.getAttribute('data-secondImage');
@@ -19,10 +19,19 @@ myList.addEventListener('mouseover', function(event) {
 });
 
 function hideAllImages() {
-  images.forEach(function(image) {
-     image.classList.remove('show');
-     myList.querySelectorAll('.whatWeDo-list__point').forEach((e) => {
-      e.classList.remove('clicked'); 
-     })
+  images.forEach(function (image) {
+    image.classList.remove('show');
+    myList.querySelectorAll('.whatWeDo-list__point').forEach((e) => {
+      e.classList.remove('clicked');
+    })
   });
 }
+
+myList.addEventListener('click', function (event) {
+  if (event.target.tagName.toLowerCase() === 'li') {
+    const linkUrl = event.target.getAttribute('data-linkUrl');
+    if (linkUrl) {
+      window.location.href = linkUrl; // Переход на указанную страницу
+    }
+  }
+});
