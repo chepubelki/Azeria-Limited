@@ -11,6 +11,18 @@ let nameError = document.querySelector('.name-input-errorMessage');
 let emailError = document.querySelector('.email-input-errorMessage');
 let subjectError = document.querySelector('.subject-input-errorMessage');
 
+const validateName = () => {
+   if (nameInput.value.trim() === '') {
+      nameInput.classList.add('invalid');
+      nameError.classList.add('errorMessage-visible');
+      return false;
+   } else {
+      nameInput.classList.remove('invalid');
+      nameError.classList.remove('errorMessage-visible');
+      return true;
+   }
+};
+
 const validateEmail = () => {
    const emailValue = emailInput.value;
    const errorMessage = 'Please enter a valid email address.';
@@ -24,18 +36,6 @@ const validateEmail = () => {
       emailInput.classList.remove('invalid');
       emailError.classList.remove('errorMessage-visible');
       emailInput.setCustomValidity('');
-      return true;
-   }
-};
-
-const validateName = () => {
-   if (nameInput.value.trim() === '') {
-      nameInput.classList.add('invalid');
-      nameError.classList.add('errorMessage-visible');
-      return false;
-   } else {
-      nameInput.classList.remove('invalid');
-      nameError.classList.remove('errorMessage-visible');
       return true;
    }
 };
@@ -91,7 +91,7 @@ subjectInput.addEventListener('blur', () => {
 })
 
 const validInput = () => {
-   return validateEmail() && validateName() && validateSubject();
+   return  validateName() && validateEmail() && validateSubject();
 };
 
 function sendRequest() {
