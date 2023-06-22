@@ -450,11 +450,16 @@ body {
    height: 32px;
    background: #EAEAFB;
    border-radius: 800px;
-   padding: 5px 9px;
 }
 
 .modal__close-btn {
-   padding: 7px 9px;
+   display: block;
+   width: 32px;
+   height: 100%;
+   background-image: url(../images/modal-close-btn.svg);
+   background-position: 50% 50%;
+   background-repeat: no-repeat;
+   background-size: 46%;
 }
 
 .modal__content {
