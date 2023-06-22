@@ -453,7 +453,9 @@ body {
    padding: 5px 9px;
 }
 
-.modal__close-btn {}
+.modal__close-btn {
+   margin-top: 4px;
+}
 
 .modal__content {
    padding: 144px 0 40px;
@@ -962,6 +964,9 @@ body {
 
    .block-option {
       opacity: 0.4;
+      font-weight: 700;
+      font-size: 9px;
+      line-height: 12px;
    }
 }
 
